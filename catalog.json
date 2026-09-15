@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "plugins": [
+    {
+      "manifest": {
+        "id": "dev.onda.provider.diagnostic",
+        "name": "ONDA Diagnostic",
+        "description": "Proveedor externo de prueba con búsqueda local y un tono de audio reproducible.",
+        "author": "ONDA",
+        "version": "1.0.0",
+        "apiVersion": "1.0.0",
+        "runtime": "hetu-v1",
+        "entrypoint": "plugin.ht",
+        "capabilities": [
+          "metadata.search",
+          "audio.match",
+          "audio.stream"
+        ],
+        "platforms": [
+          "android",
+          "windows"
+        ],
+        "permissions": {
+          "networkDomains": [],
+          "loginOrigins": [],
+          "secureStorageKeys": []
+        },
+        "repository": "https://github.com/LERL7355608/onda-plugin-catalog"
+      },
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-diagnostic-provider.ondaplugin",
+      "sha256": "2cdbbab141ba81061474318368541444938d8dc419538933de1429d5b2d43ae9"
+    }
+  ]
+}
