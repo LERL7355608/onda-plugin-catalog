@@ -28,7 +28,7 @@
         },
         "repository": "https://github.com/LERL7355608/onda-plugin-catalog"
       },
-      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-diagnostic-provider.ondaplugin",
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-diagnostic-provider.meb",
       "sha256": "e3432de2cab9830f8a013d559051b0d7e54e9808f67874594588d4906653e6ae"
     }
   ]
