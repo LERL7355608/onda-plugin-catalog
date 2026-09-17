@@ -60,6 +60,36 @@
       },
       "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-deezer-metadata-1.1.0.meb",
       "sha256": "58534e80559b54d4fcf99f1abd35f069cb6302db579cc3b62fedce3af29241fb"
+    },
+    {
+      "manifest": {
+        "id": "dev.onda.lyrics.lrclib",
+        "name": "LRCLIB Lyrics",
+        "description": "Plain and synchronized lyrics from the public LRCLIB service.",
+        "author": "ONDA",
+        "version": "1.0.0",
+        "apiVersion": "1.0.0",
+        "runtime": "hetu-v1",
+        "entrypoint": "plugin.ht",
+        "capabilities": [
+          "lyrics.plain",
+          "lyrics.synced"
+        ],
+        "platforms": [
+          "android",
+          "windows"
+        ],
+        "permissions": {
+          "networkDomains": [
+            "lrclib.net"
+          ],
+          "loginOrigins": [],
+          "secureStorageKeys": []
+        },
+        "repository": "https://github.com/LERL7355608/onda-plugin-catalog"
+      },
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-lrclib-lyrics-1.0.0.meb",
+      "sha256": "f028302b13d35e85b52a26739d3e821ad03375cca5e7fcccd96ec3ea09b3b498"
     }
   ]
 }
