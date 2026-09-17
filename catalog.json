@@ -30,6 +30,36 @@
       },
       "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-diagnostic-provider.meb",
       "sha256": "e3432de2cab9830f8a013d559051b0d7e54e9808f67874594588d4906653e6ae"
+    },
+    {
+      "manifest": {
+        "id": "dev.onda.metadata.deezer",
+        "name": "Deezer Metadata",
+        "description": "Catálogo externo de canciones y playlists públicas de Deezer.",
+        "author": "ONDA",
+        "version": "1.1.0",
+        "apiVersion": "1.0.0",
+        "runtime": "hetu-v1",
+        "entrypoint": "plugin.ht",
+        "capabilities": [
+          "metadata.search",
+          "metadata.playlists"
+        ],
+        "platforms": [
+          "android",
+          "windows"
+        ],
+        "permissions": {
+          "networkDomains": [
+            "api.deezer.com"
+          ],
+          "loginOrigins": [],
+          "secureStorageKeys": []
+        },
+        "repository": "https://github.com/LERL7355608/onda-plugin-catalog"
+      },
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-deezer-metadata-1.1.0.meb",
+      "sha256": "58534e80559b54d4fcf99f1abd35f069cb6302db579cc3b62fedce3af29241fb"
     }
   ]
 }
