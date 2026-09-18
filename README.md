@@ -9,6 +9,7 @@ The catalog currently includes:
 - a diagnostic provider with a generated audio tone for validating discovery,
   installation, playback, download and update flows;
 - a Deezer metadata provider for public search and playlists;
+- a Deemix audio provider distributed as an independent Python plugin;
 - an LRCLIB provider for plain and synchronized lyrics.
 
 Catalog endpoint:

@@ -63,6 +63,54 @@
     },
     {
       "manifest": {
+        "id": "dev.onda.audio.deemix",
+        "name": "Deemix Audio",
+        "description": "Audio provider packaged independently for ONDA's Python runtime.",
+        "author": "Private ONDA integration",
+        "version": "0.6.0",
+        "apiVersion": "1.0.0",
+        "runtime": "python-v1",
+        "entrypoint": "provider.py",
+        "capabilities": [
+          "auth",
+          "audio.match",
+          "audio.stream",
+          "audio.download"
+        ],
+        "platforms": [
+          "android"
+        ],
+        "permissions": {
+          "networkDomains": [
+            "deezer.com",
+            "www.deezer.com",
+            "api.deezer.com",
+            "media.deezer.com",
+            "cdns-files.dzcdn.net",
+            "e-cdns-images.dzcdn.net",
+            "dzcdn.net"
+          ],
+          "loginOrigins": [],
+          "secureStorageKeys": [
+            "deezer_arl"
+          ]
+        },
+        "settings": [
+          {
+            "key": "deezer_arl",
+            "label": "Sesión de Deezer (ARL)",
+            "description": "Credencial privada de tu cuenta. ONDA la cifra y nunca vuelve a mostrarla.",
+            "type": "secret",
+            "required": true
+          }
+        ],
+        "repository": "https://github.com/LERL7355608/onda-plugin-catalog"
+      },
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-deemix-audio-0.6.0.meb",
+      "sha256": "2dcd03ffeec1eb406a19783833bff27129276b2296a04f378a2aaeb98f44e23c"
+    },
+    {
+      "manifest": {
         "id": "dev.onda.lyrics.lrclib",
         "name": "LRCLIB Lyrics",
         "description": "Plain and synchronized lyrics from the public LRCLIB service.",
