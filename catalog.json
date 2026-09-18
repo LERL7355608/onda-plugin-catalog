@@ -171,6 +171,66 @@
     },
     {
       "manifest": {
+        "id": "dev.onda.audio.deemix",
+        "name": "Deemix Audio",
+        "description": "Audio provider packaged independently for ONDA's Python runtime.",
+        "author": "Private ONDA integration",
+        "version": "0.7.1",
+        "apiVersion": "1.0.0",
+        "runtime": "python-v1",
+        "entrypoint": "provider.py",
+        "capabilities": [
+          "auth",
+          "audio.match",
+          "audio.stream",
+          "audio.download"
+        ],
+        "platforms": [
+          "android"
+        ],
+        "permissions": {
+          "networkDomains": [
+            "deezer.com",
+            "www.deezer.com",
+            "api.deezer.com",
+            "media.deezer.com",
+            "cdns-files.dzcdn.net",
+            "e-cdns-images.dzcdn.net",
+            "dzcdn.net"
+          ],
+          "loginOrigins": [
+            "https://deezer.com",
+            "https://www.deezer.com",
+            "https://auth.deezer.com",
+            "https://account.deezer.com",
+            "https://connect.deezer.com"
+          ],
+          "secureStorageKeys": [
+            "deezer_arl"
+          ]
+        },
+        "settings": [
+          {
+            "key": "deezer_arl",
+            "label": "Sesión de Deezer (ARL)",
+            "description": "Credencial privada de tu cuenta. ONDA la cifra y nunca vuelve a mostrarla.",
+            "type": "secret",
+            "required": true
+          }
+        ],
+        "webLogin": {
+          "startUrl": "https://account.deezer.com/es/login/",
+          "cookieUrl": "https://www.deezer.com/",
+          "cookieName": "arl",
+          "secretKey": "deezer_arl"
+        },
+        "repository": "https://github.com/LERL7355608/onda-plugin-catalog"
+      },
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-deemix-audio-0.7.1.meb",
+      "sha256": "07728a4025c645e6504aaccbe0fa110c70e0aa3ec4dd5a452d303198815d07d8"
+    },
+    {
+      "manifest": {
         "id": "dev.onda.lyrics.lrclib",
         "name": "LRCLIB Lyrics",
         "description": "Plain and synchronized lyrics from the public LRCLIB service.",
