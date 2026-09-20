@@ -10,7 +10,8 @@ The catalog currently includes:
   installation, playback, download and update flows;
 - a Deezer metadata provider for public search and playlists;
 - a Deemix audio provider distributed as an independent Python plugin;
-- an LRCLIB provider for plain and synchronized lyrics.
+- an LRCLIB provider for plain and synchronized lyrics;
+- ListenBrainz and Last.fm scrobbling providers with protected credentials.
 
 Catalog endpoint:
 

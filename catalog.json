@@ -318,6 +318,102 @@
       },
       "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-lrclib-lyrics-1.0.0.meb",
       "sha256": "f028302b13d35e85b52a26739d3e821ad03375cca5e7fcccd96ec3ea09b3b498"
+    },
+    {
+      "manifest": {
+        "id": "dev.onda.scrobble.listenbrainz",
+        "name": "ListenBrainz Scrobbler",
+        "description": "Envía reproducciones y el estado actual a ListenBrainz.",
+        "author": "ONDA",
+        "version": "1.0.0",
+        "apiVersion": "1.0.0",
+        "runtime": "python-v1",
+        "entrypoint": "provider.py",
+        "capabilities": [
+          "auth",
+          "scrobble.submit"
+        ],
+        "platforms": [
+          "android"
+        ],
+        "permissions": {
+          "networkDomains": [
+            "api.listenbrainz.org"
+          ],
+          "loginOrigins": [],
+          "secureStorageKeys": [
+            "user_token"
+          ]
+        },
+        "settings": [
+          {
+            "key": "user_token",
+            "label": "Token de usuario",
+            "description": "Token personal de ListenBrainz. ONDA lo cifra y nunca vuelve a mostrarlo.",
+            "type": "secret",
+            "required": true
+          }
+        ],
+        "repository": "https://github.com/LERL7355608/onda-listenbrainz-scrobble-provider"
+      },
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-listenbrainz-scrobble-1.0.0.meb",
+      "sha256": "ce45143c0e061a54b301d7254ca0f4b9679554b19da1c5e8e27bbf689d742e0c"
+    },
+    {
+      "manifest": {
+        "id": "dev.onda.scrobble.lastfm",
+        "name": "Last.fm Scrobbler",
+        "description": "Envía reproducciones y el estado actual a Last.fm.",
+        "author": "ONDA",
+        "version": "1.0.0",
+        "apiVersion": "1.0.0",
+        "runtime": "python-v1",
+        "entrypoint": "provider.py",
+        "capabilities": [
+          "auth",
+          "scrobble.submit"
+        ],
+        "platforms": [
+          "android"
+        ],
+        "permissions": {
+          "networkDomains": [
+            "ws.audioscrobbler.com"
+          ],
+          "loginOrigins": [],
+          "secureStorageKeys": [
+            "api_key",
+            "shared_secret",
+            "session_key"
+          ]
+        },
+        "settings": [
+          {
+            "key": "api_key",
+            "label": "API key",
+            "description": "Clave de la aplicación creada en Last.fm.",
+            "type": "secret",
+            "required": true
+          },
+          {
+            "key": "shared_secret",
+            "label": "Shared secret",
+            "description": "Secreto usado para firmar solicitudes. ONDA lo almacena cifrado.",
+            "type": "secret",
+            "required": true
+          },
+          {
+            "key": "session_key",
+            "label": "Session key",
+            "description": "Sesión autorizada de Last.fm para enviar scrobbles.",
+            "type": "secret",
+            "required": true
+          }
+        ],
+        "repository": "https://github.com/LERL7355608/onda-lastfm-scrobble-provider"
+      },
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-lastfm-scrobble-1.0.0.meb",
+      "sha256": "ea687549d73b6e3800b50a6610c53499ca5e558528183204296f3103a9e82e8c"
     }
   ]
 }
