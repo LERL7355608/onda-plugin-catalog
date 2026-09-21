@@ -325,7 +325,7 @@
         "name": "ListenBrainz Scrobbler",
         "description": "Envía reproducciones y el estado actual a ListenBrainz.",
         "author": "ONDA",
-        "version": "1.0.1",
+        "version": "1.1.0",
         "apiVersion": "1.0.0",
         "runtime": "python-v1",
         "entrypoint": "provider.py",
@@ -340,10 +340,18 @@
           "networkDomains": [
             "api.listenbrainz.org"
           ],
-          "loginOrigins": [],
+          "loginOrigins": [
+            "https://listenbrainz.org",
+            "https://musicbrainz.org"
+          ],
           "secureStorageKeys": [
             "user_token"
           ]
+        },
+        "guidedLogin": {
+          "startUrl": "https://listenbrainz.org/settings/",
+          "secretKey": "user_token",
+          "buttonLabel": "Conectar con ListenBrainz"
         },
         "settings": [
           {
@@ -351,13 +359,14 @@
             "label": "Token de usuario",
             "description": "Token personal de ListenBrainz. ONDA lo cifra y nunca vuelve a mostrarlo.",
             "type": "secret",
-            "required": true
+            "required": true,
+            "managedByAuth": true
           }
         ],
         "repository": "https://github.com/LERL7355608/onda-listenbrainz-scrobble-provider"
       },
-      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-listenbrainz-scrobble-1.0.1.meb",
-      "sha256": "11fec562d8c035618ef4f2dd6c75189d0bcd2ee1fbc1e49e3b95498bf38de1e5"
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-listenbrainz-scrobble-1.1.0.meb",
+      "sha256": "16c25e9bc7dfc516fd3a84a7193cf31a7233a1dbb4593dfbe1b3ca5a64e88ab0"
     },
     {
       "manifest": {
@@ -365,7 +374,7 @@
         "name": "Last.fm Scrobbler",
         "description": "Envía reproducciones y el estado actual a Last.fm.",
         "author": "ONDA",
-        "version": "1.0.1",
+        "version": "1.1.0",
         "apiVersion": "1.0.0",
         "runtime": "python-v1",
         "entrypoint": "provider.py",
@@ -380,12 +389,18 @@
           "networkDomains": [
             "ws.audioscrobbler.com"
           ],
-          "loginOrigins": [],
+          "loginOrigins": [
+            "https://www.last.fm",
+            "https://secure.last.fm"
+          ],
           "secureStorageKeys": [
             "api_key",
             "shared_secret",
             "session_key"
           ]
+        },
+        "providerLogin": {
+          "buttonLabel": "Conectar con Last.fm"
         },
         "settings": [
           {
@@ -407,13 +422,14 @@
             "label": "Session key",
             "description": "Sesión autorizada de Last.fm para enviar scrobbles.",
             "type": "secret",
-            "required": true
+            "required": true,
+            "managedByAuth": true
           }
         ],
         "repository": "https://github.com/LERL7355608/onda-lastfm-scrobble-provider"
       },
-      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-lastfm-scrobble-1.0.1.meb",
-      "sha256": "0bff7eca946ed6848e9dfd878b64d54949c7a86b98b7cf7a06ab130f74953859"
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-lastfm-scrobble-1.1.0.meb",
+      "sha256": "3f3c29fc0185b1942efcab0bf22e2a461e670060189a7537287f1d1277f69b33"
     }
   ]
 }
