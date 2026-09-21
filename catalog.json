@@ -7,7 +7,7 @@
         "name": "ONDA Diagnostic",
         "description": "Proveedor externo de prueba con búsqueda, reproducción y descarga de un tono local.",
         "author": "ONDA",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "apiVersion": "1.0.0",
         "runtime": "hetu-v1",
         "entrypoint": "plugin.ht",
@@ -342,6 +342,7 @@
           ],
           "loginOrigins": [
             "https://listenbrainz.org",
+            "https://metabrainz.org",
             "https://musicbrainz.org"
           ],
           "secureStorageKeys": [
@@ -365,8 +366,8 @@
         ],
         "repository": "https://github.com/LERL7355608/onda-listenbrainz-scrobble-provider"
       },
-      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-listenbrainz-scrobble-1.1.0.meb",
-      "sha256": "16c25e9bc7dfc516fd3a84a7193cf31a7233a1dbb4593dfbe1b3ca5a64e88ab0"
+      "packageUrl": "https://raw.githubusercontent.com/LERL7355608/onda-plugin-catalog/main/packages/onda-listenbrainz-scrobble-1.1.1.meb",
+      "sha256": "5ad79cf0a7d6a92a44d892a811bb670837538b756647d2b23ed980044e622426"
     },
     {
       "manifest": {
